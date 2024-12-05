@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford Mustang Car Slider</title>
+    <link href="https://fonts.cdnfonts.com/css/avenir-lt-pro" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="ALGEC001-car-container">
+        <!-- Car Image -->
+        <img src="https://www.vdm.ford.com/content/dam/brand_ford/en_us/brand/performance/gt350/2019/hotspots/3-2/19_FRD_MST_200078_350_169.jpg/jcr:content/renditions/cq5dam.web.1280.1280.jpeg"
+            alt="Car">
+
+        <!-- Dots -->
+
+        <div class="dot dot1" data-slide="0">
+            <span class="plus">+</span>
+        </div>
+        <div class="dot dot3" data-slide="1">
+            <span class="plus">+</span>
+        </div>
+        <div class="dot dot4" data-slide="2">
+            <span class="plus">+</span>
+        </div>
+        <div class="dot dot2" data-slide="3">
+            <span class="plus">+</span>
+        </div>
+    </div>
+    </div>
+
+    <!-- Slider -->
+    <div class="ALGEC001-slider" id="slider">
+        <span class="close-btn" id="close-btn">&times;</span>
+
+        <div class="ALGEC001-slider-container">
+            <swiper-container class="mySwiper" pagination="true" pagination-type="fraction" navigation="true">
+                <!-- Slide 1 -->
+                <swiper-slide>
+                    <div class="card">
+                        <img src="https://www.ford.com/content/dam/brand_ford/en_us/brand/performance/gt350/2019/hotspots/3-2/19_C6935716_MUST_GT350_UnderhoodEngine_mn-32.jpg/jcr:content/renditions/cq5dam.web.1440.1440.jpeg"
+                            alt="Engine">
+                        <h1>Engine</h1>
+                        <p>The 5.L V8 with flat-plane crankshaft iis included on the Shelby GT350® and Shelby® GT350R. It
+                            produces 526 horsepower and 429 lb-ft. of torque. 68 It's the most powerful naturally
+                            aspirated road-going Ford production engine ever. With a readline of 8,250 rp, it's also the
+                            highest-revving production V8 Ford has ever created.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Slide 2 -->
+                <swiper-slide>
+                    <div class="card">
+                        <img src="https://www.ford.com/content/dam/brand_ford/en_us/brand/performance/gt350/2019/hotspots/3-2/19_FRD_MST_200072_350-32.jpg/jcr:content/renditions/cq5dam.web.1440.1440.jpeg"
+                            alt="Transmission Coolers">
+                        <h1>Transmission Coolers</h1>
+                        <p>TREMEC is a registered trademark of Transmisiones Y Equipos Mecanicos, S.A. de C.V.</p>
+                        <p class="description">Brembo is a trademark of Brembo S.p.A.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Slide 3 -->
+                <swiper-slide>
+                    <div class="card">
+                        <img src="https://www.ford.com/content/dam/brand_ford/en_us/brand/performance/gt350/2019/hotspots/3-2/19_FRD_MST_40582_GT350-32.jpg/jcr:content/renditions/cq5dam.web.1440.1440.jpeg"
+                            alt="Brakes">
+                        <h1>Brakes</h1>
+                        <p>Up front, six-piston Brembo™ calipers and 15.5-inch SHW® multipiece rotors are vented to
+                            store and dissipate energy, so they perform to track standards and resist fading. You can
+                            thank Ford Performance for that.</p>
+                        <p class="description">Brembo is a trademark of Brembo S.p.A.</p>
+                    </div>
+                </swiper-slide>
+
+                <!-- Slide 4 -->
+                <swiper-slide>
+                    <div class="card">
+                        <img src="https://www.ford.com/content/dam/brand_ford/en_us/brand/performance/gt350/2019/hotspots/3-2/19_FRD_MST_200078-32.jpg/jcr:content/renditions/cq5dam.web.1440.1440.jpeg"
+                            alt="Rear Brakes">
+                        <h1>Rear Brakes</h1>
+                        <p>In the rear, you'll find four-piston Brembo™ calipers with 14.9-inch 2-piece vented smooth
+                            rotors.</p>
+                        <p class="description">Brembo is a trademark of Brembo S.p.A.</p>
+                    </div>
+                </swiper-slide>
+            </swiper-container>
+        </div>
+
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+</body>
+
+</html>

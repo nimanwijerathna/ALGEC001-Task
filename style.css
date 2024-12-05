@@ -1,0 +1,256 @@
+/* General styles */
+body {
+    font-family: 'Avenir LT Pro', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Car container */
+.ALGEC001-car-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ALGEC001-car-container img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* Outer circle */
+.dot {
+    position: absolute;
+    width: 33px;
+    /* Adjust size */
+    height: 33px;
+    border: 5px solid #7d7c7c9b;
+    /* Light gray border */
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* Semi-transparent white background */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    /* Smooth hover effect */
+    box-shadow: 0 2px 5px rgba(180, 179, 179, 0.2);
+    /* Subtle shadow */
+}
+
+/* Plus symbol inside */
+.dot .plus {
+    font-size: 39px;
+    color: #7d7c7c;
+    line-height: 1;
+}
+
+/* Hover effect */
+.dot:hover {
+    transform: scale(1.2);
+    background-color: rgb(23, 105, 238);
+    /* Brighten background on hover */
+    box-shadow: 0 0 0px 2px rgba(118, 118, 118, 0.612);
+    /* Stronger shadow on hover */
+}
+
+.dot .plus:hover {
+    color: white;
+}
+
+/* click1 */
+.dot1 {
+    top: 32%;
+    left: 18%;
+}
+
+/* click4 */
+.dot2 {
+    top: 44%;
+    left: 71%;
+}
+
+/* click2 */
+.dot3 {
+    top: 62%;
+    left: 34%;
+}
+
+/* click3 */
+.dot4 {
+    top: 54%;
+    left: 47%;
+}
+
+/* Slider */
+.ALGEC001-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 100vh;
+    background-color: transparent;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    margin-left: 70px;
+}
+
+/* Swiper Slide */
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f9f9f9;
+}
+
+/* Slider Container */
+.ALGEC001-slider-container {
+    width: 100%;
+}
+
+/* Swiper Container */
+swiper-container {
+    width: 100%;
+}
+
+/* Swiper Slide */
+swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Design */
+.card {
+    width: 100%;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 46px;
+    color: #1f1969;
+    text-align: start;
+    margin-left: 20px;
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.card p {
+    font-size: 18px;
+    text-align: start;
+    margin-left: 20px;
+    max-width: 850px;
+}
+
+.card .description {
+    font-size: 12px;
+    text-align: start;
+    margin-left: 20px;
+    color: #626161;
+    margin-bottom: 40px;
+}
+
+/* Swiper Pagination */
+.swiper-pagination {
+    font-size: 14px;
+    color: #007bff;
+    font-weight: bold;
+}
+
+/* Swiper Navigation Buttons */
+.swiper-button-next,
+.swiper-button-prev {
+    color: #007bff;
+}
+
+.close-btn {
+    position: absolute;
+    top: 21px;
+    right: 20px;
+    font-size: 35px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 2000;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgba(139, 139, 139, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Mobile View (Responsive Adjustments) */
+@media (max-width: 800px) {
+
+    /* Adjust slider container */
+    .ALGEC001-slider {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card {
+        width: 100%;
+        height: 100vh;
+    }
+
+    .card img {
+        width: 100%;
+        height: 300px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    .card h1 {
+        font-size: 25px;
+    }
+
+    .card p {
+        font-size: 17px;
+    }
+
+    .ALGEC001-car-container img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    /* click1 */
+    .dot1 {
+        top: 40%;
+        left: 18%;
+    }
+
+    /* click4 */
+    .dot2 {
+        top: 45%;
+        left: 68%;
+    }
+
+    /* click2 */
+    .dot3 {
+        top: 52%;
+        left: 33%;
+    }
+
+    /* click3 */
+    .dot4 {
+        top: 50%;
+        left: 44%;
+    }
+
+    /* Plus symbol inside */
+    .dot .plus {
+        font-size: 20px;
+    }
+}
